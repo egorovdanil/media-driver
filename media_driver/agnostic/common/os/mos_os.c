@@ -936,7 +936,7 @@ MEMORY_OBJECT_CONTROL_STATE Mos_CachePolicyGetMemoryObject(
         MHW_RESOURCE_USAGE_Sfc_IefLineBufferSurface,                                //!< SFC IEF Line buffer Surface
 
         // Camera capture
-        GMM_RESOURCE_USAGE_CAMERA_CAPTURE,
+        //GMM_RESOURCE_USAGE_CAMERA_CAPTURE,
 
     };
 

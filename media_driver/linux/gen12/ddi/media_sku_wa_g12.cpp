@@ -451,13 +451,12 @@ static bool InitRKLMediaWa(struct GfxDeviceInfo *devInfo,
 
 static struct LinuxDeviceInit rklDeviceInit =
 {
-    .productFamily    = IGFX_ROCKETLAKE,
     .InitMediaFeature = InitRKLMediaSku,
     .InitMediaWa      = InitRKLMediaWa,
 };
 
-static bool rklDeviceRegister = DeviceInfoFactory<LinuxDeviceInit>::
-    RegisterDevice(IGFX_ROCKETLAKE, &rklDeviceInit);
+// static bool rklDeviceRegister = DeviceInfoFactory<LinuxDeviceInit>::
+//     RegisterDevice(IGFX_ROCKETLAKE, &rklDeviceInit);
 
 #endif
 

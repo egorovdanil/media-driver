@@ -266,7 +266,6 @@ static bool dg1Gt2Device4908 = DeviceInfoFactory<GfxDeviceInfo>::
 #ifdef IGFX_GEN12_RKL_SUPPORTED
 static struct GfxDeviceInfo rklGt1Info = {
     .platformType     = PLATFORM_MOBILE,
-    .productFamily    = IGFX_ROCKETLAKE,
     .displayFamily    = IGFX_GEN12_CORE,
     .renderFamily     = IGFX_GEN12_CORE,
     .eGTType          = GTTYPE_GT1,
@@ -286,7 +285,6 @@ static struct GfxDeviceInfo rklGt1Info = {
 
 static struct GfxDeviceInfo rklGt1fInfo = {
     .platformType     = PLATFORM_MOBILE,
-    .productFamily    = IGFX_ROCKETLAKE,
     .displayFamily    = IGFX_GEN12_CORE,
     .renderFamily     = IGFX_GEN12_CORE,
     .eGTType          = GTTYPE_GT0_5,

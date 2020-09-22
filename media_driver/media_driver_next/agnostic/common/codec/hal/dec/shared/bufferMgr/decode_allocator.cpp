@@ -544,33 +544,33 @@ ResourceUsage DecodeAllocator::ConvertGmmResourceUsage(const GMM_RESOURCE_USAGE_
     ResourceUsage resUsageType;
     switch (gmmResUsage)
     {
-    case GMM_RESOURCE_USAGE_DECODE_INPUT_BITSTREAM:
-        resUsageType = resourceInputBitstream;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_INPUT_REFERENCE:
-        resUsageType = resourceInputReference;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_INTERNAL_READ:
-        resUsageType = resourceInternalRead;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_INTERNAL_WRITE:
-        resUsageType = resourceInternalWrite;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_INTERNAL_READ_WRITE_CACHE:
-        resUsageType = resourceInternalReadWriteCache;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_INTERNAL_READ_WRITE_NOCACHE:
-        resUsageType = resourceInternalReadWriteNoCache;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_OUTPUT_PICTURE:
-        resUsageType = resourceOutputPicture;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_OUTPUT_STATISTICS_WRITE:
-        resUsageType = resourceStatisticsWrite;
-        break;
-    case GMM_RESOURCE_USAGE_DECODE_OUTPUT_STATISTICS_READ_WRITE:
-        resUsageType = resourceStatisticsReadWrite;
-        break;
+    // case GMM_RESOURCE_USAGE_DECODE_INPUT_BITSTREAM:
+    //     resUsageType = resourceInputBitstream;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_INPUT_REFERENCE:
+    //     resUsageType = resourceInputReference;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_INTERNAL_READ:
+    //     resUsageType = resourceInternalRead;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_INTERNAL_WRITE:
+    //     resUsageType = resourceInternalWrite;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_INTERNAL_READ_WRITE_CACHE:
+    //     resUsageType = resourceInternalReadWriteCache;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_INTERNAL_READ_WRITE_NOCACHE:
+    //     resUsageType = resourceInternalReadWriteNoCache;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_OUTPUT_PICTURE:
+    //     resUsageType = resourceOutputPicture;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_OUTPUT_STATISTICS_WRITE:
+    //     resUsageType = resourceStatisticsWrite;
+    //     break;
+    // case GMM_RESOURCE_USAGE_DECODE_OUTPUT_STATISTICS_READ_WRITE:
+    //     resUsageType = resourceStatisticsReadWrite;
+    //     break;
     default:
         resUsageType = resourceDefault;
     }
