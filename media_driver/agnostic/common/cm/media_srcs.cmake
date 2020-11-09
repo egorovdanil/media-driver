@@ -33,6 +33,7 @@ set(TMP_SOURCES_
     ${CMAKE_CURRENT_LIST_DIR}/cm_kernel_rt.cpp
     ${CMAKE_CURRENT_LIST_DIR}/cm_kernel_data.cpp
     ${CMAKE_CURRENT_LIST_DIR}/cm_log.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/cm_mem.cpp
     ${CMAKE_CURRENT_LIST_DIR}/cm_perf.cpp
     ${CMAKE_CURRENT_LIST_DIR}/cm_printf_host.cpp
     ${CMAKE_CURRENT_LIST_DIR}/cm_program.cpp
@@ -86,6 +87,8 @@ set(TMP_HEADERS_
     ${CMAKE_CURRENT_LIST_DIR}/cm_kernel_rt.h
     ${CMAKE_CURRENT_LIST_DIR}/cm_kernel_data.h
     ${CMAKE_CURRENT_LIST_DIR}/cm_log.h
+    ${CMAKE_CURRENT_LIST_DIR}/cm_mem_c_impl.h
+    ${CMAKE_CURRENT_LIST_DIR}/cm_mem_sse_impl.h
     ${CMAKE_CURRENT_LIST_DIR}/cm_mem.h
     ${CMAKE_CURRENT_LIST_DIR}/cm_mov_inst.h
     ${CMAKE_CURRENT_LIST_DIR}/cm_perf.h
@@ -133,6 +136,10 @@ set(TMP_HEADERS_
     ${CMAKE_CURRENT_LIST_DIR}/cm_wrapper.h
     ${CMAKE_CURRENT_LIST_DIR}/cm_surface_2d_rt_base.h)
 
+set(TMP_SOURCES_SSE2
+    ${CMAKE_CURRENT_LIST_DIR}/cm_mem_c_impl.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/cm_mem_sse_impl.cpp)
+
 set(SOURCES_
     ${SOURCES_}
     ${TMP_SOURCES_})
@@ -148,6 +155,11 @@ set(COMMON_SOURCES_
 set(COMMON_HEADERS_
     ${COMMON_HEADERS_}
     ${TMP_HEADERS_})
+
+set(SOURCES_SSE2
+    ${SOURCES_SSE2}
+    ${TMP_SOURCES_SSE2}
+)
 
 source_group(CM FILES ${TMP_SOURCES_} ${TMP_HEADERS_})
 
